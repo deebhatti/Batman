@@ -19,13 +19,13 @@ public class Open {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://facebook.com");
+		driver.get("https://www.edureka.co/");
 		
 	}
 
 	@Test
 	public void titleVerification() {
-		String expectedTitle = "Facebook - Log In or Sign Up";
+		String expectedTitle = "Instructor Le Online Courses with 24x7 On-Demand Support | Edureka";
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 
