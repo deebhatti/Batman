@@ -16,7 +16,7 @@ public class Open {
 	@BeforeTest
 	public void openBrowser() throws MalformedURLException {
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		//driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.edureka.co/");
